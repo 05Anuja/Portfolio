@@ -11,12 +11,17 @@ body {
     width: 100%;
 }
 
+
+/* Navbar Styling */
+
 #navbar {
     height: 60px;
     width: 100%;
     background-color: #1a1f36;
+    /* background: linear-gradient( #1a1f36, #4a4e44); */
     padding: 10px 30px;
     position: relative;
+    /* color: #f2f2f2; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +47,22 @@ body {
     text-decoration: none;
     color: #ffff;
     text-transform: capitalize;
+    transition: all 0.3s ease;
 }
+
+#navbar .nav .nav-links .link:hover {
+    background-color: #4a90e2;
+    width: auto;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* #navbar .nav .nav-links .link:active {
+    font-weight: bold;
+} */
 
 #navbar .menu-icon {
     display: none;
@@ -52,4 +72,80 @@ body {
 #navbar .menu-icon .icon {
     color: #ffff;
     font-size: 30px;
+}
+
+
+/* Home Section */
+
+#home-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #121926;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    color: white;
+    padding: 80px;
+}
+
+#home-section .img {
+    height: 400px;
+    width: 400px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#home-section .my-info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    height: 400px;
+    gap: 15px;
+    /* padding: 10px; */
+    width: 400px;
+}
+
+#home-section .my-info .name {
+    /* text-align: start; */
+    font-size: xx-large;
+    /* padding: 10px; */
+}
+
+#home-section .my-info .text {
+    color: aqua;
+    /* padding: 10px; */
+    font-size: x-large;
+}
+
+#home-section .my-info .description {
+    line-height: 22px;
+    /* text-align: start; */
+}
+
+#home-section .my-info .description span {
+    font-weight: bolder;
+}
+
+#home-section .my-info .outer-links {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 5px; */
+}
+
+#home-section .my-info .outer-links .media-links .icons {
+    color: white;
+    font-size: 30px;
+    /* gap: 100px; */
+}
+
+
+/* About section */
+
+#about-section {
+    height: 100vh;
+    width: 100%;
+    background-color: #121926;
+    color: wheat;
 }

@@ -1,0 +1,24 @@
+/* Responsive Styles */
+
+@media (max-width:600px) {
+    #navbar .nav {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+        background-color: #1a1f36;
+        overflow: hidden;
+    }
+    #navbar .nav .nav-links {
+        padding: 10px;
+    }
+    #navbar .menu-icon {
+        display: block;
+    }
+    #menuList {
+        transition: all 0.5s;
+    }
+}

@@ -9,7 +9,6 @@ html,
 body {
     height: 100%;
     width: 100%;
-    /* background-color: #faf5f7; */
 }
 
 
@@ -19,7 +18,8 @@ body {
     height: 60px;
     width: 100%;
     z-index: 999;
-    background-color: #faf5f7;
+    /* background-color: #faf5f7; */
+    background-color: white;
     box-shadow: 1px 0 5px grey;
     /* background: linear-gradient( #1a1f36, #4a4e44); */
     padding: 10px 30px;
@@ -88,7 +88,8 @@ body {
 #home-section {
     height: 100vh;
     width: 100%;
-    background-color: #faf5f5;
+    /* background-color: #faf5f5; */
+    background-color: white;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-around;
@@ -105,6 +106,7 @@ body {
     /* box-shadow: 2px 2px 5px black; */
     border-radius: 50%;
     transition: 1s;
+    cursor: pointer;
 }
 
 #home-section .img1:hover {
@@ -132,12 +134,14 @@ body {
     color: black;
     /* padding: 10px; */
     /* text-shadow: 2px 2px 5px black; */
-    font-size: xx-large;
+    /* font-size: xx-large; */
+    font-size: 38px;
+    text-shadow: 1px 1px 2px;
 }
 
 #home-section .my-info .description {
     line-height: 22px;
-    /* font-size: 20px; */
+    font-size: 18px;
     /* text-align: start; */
 }
 
@@ -179,7 +183,7 @@ body {
     text-align: center;
     align-content: center;
     /* padding: 10px; */
-    padding-left: 130px;
+    padding-left: 120px;
 }
 
 #home-section .my-info .download-btn button {
@@ -193,7 +197,7 @@ body {
     /* background-color: #4a90e2; */
     background-color: #1a62ab;
     color: white;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -204,15 +208,31 @@ body {
 
 /* About section */
 
-#about {
+#about-section {
     height: 100vh;
     width: 100%;
+    padding: 10px;
 }
 
-#about .about-heading {
+#about-section .about-heading {
     text-transform: capitalize;
+    margin-top: 100px;
     text-align: center;
-    padding: 10px;
+    font-size: 30px;
+}
+
+#about-section .about-description {
+    /* font-weight: lighter; */
+    font-size: 20px;
+    margin: 30px;
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+#about-section .about-description span {
+    font-weight: bolder;
+    /* text-decoration: underline; */
+    /* font-size: 22px; */
 }
 
 

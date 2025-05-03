@@ -234,3 +234,61 @@
     font-size: 16px;
   }
 }
+
+
+/* EDUCATION Section */
+#education {
+  background-color: #1E293B;
+  color: #F8FAFC;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.education-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.education-container h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #38BDF8;
+}
+
+.education-item {
+  background-color: #334155;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.education-item h3 {
+  font-size: 24px;
+  color: #38BDF8;
+}
+
+.education-item p {
+  margin: 8px 0;
+  color: #E2E8F0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive EDUCATION Section */
+@media (max-width: 768px) {
+  .education-container h2 {
+    font-size: 28px;
+  }
+  .education-item {
+    padding: 15px;
+  }
+  .education-item h3 {
+    font-size: 20px;
+  }
+  .education-item p {
+    font-size: 14px;
+  }
+}

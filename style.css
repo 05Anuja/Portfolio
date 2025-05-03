@@ -194,15 +194,43 @@
       font-size: 18px;
     }
   }
-/* 
+
+/* ABOUT Section */
 #about {
-    height: 100vh;
-    width: 100%;
+  background-color: #1E293B;
+  color: #F8FAFC;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#projects {
-    height: 100vh;
-    width: 100%;
-    background-color: blue;
-} */
-  
+.about-container {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #38BDF8;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #CBD5E1;
+}
+
+/* Responsive ABOUT Section */
+@media (max-width: 768px) {
+  .about-container h2 {
+    font-size: 28px;
+  }
+  .about-content p {
+    font-size: 16px;
+  }
+}

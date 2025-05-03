@@ -1,20 +1,23 @@
+/* Reset and font */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.navbar {
+  }
+  
+  /* NAVBAR styling (unchanged) */
+  .navbar {
     width: 100%;
     height: 60px;
-    background: #071E23;
+    background: #0F172A;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.navbar h3 {
+    position: sticky;
+    top: 0;
+  }
+  .navbar h3 {
     color: #fff;
     margin-left: 40px;
     font-size: 28px;
@@ -22,63 +25,184 @@
     padding: 5px 8px;
     border-radius: 7px;
     text-transform: uppercase;
-}
-
-.nav-menu {
+  }
+  .nav-menu {
     margin-right: 30px;
     color: #fff;
-}
-
-.menuBtn, .closeBtn {
+  }
+  .menuBtn, .closeBtn {
     font-size: 28px;
     margin: 0px 20px;
     display: none;
-}
-
-ul li {
+  }
+  ul li {
     color: #fff;
     list-style: none;
     display: inline-block;
     margin: 0px 20px;
     font-size: 20px;
     cursor: pointer;
-}
-
-ul li a {
+  }
+  ul li a {
     text-decoration: none;
     color: #fff;
-}
-
-ul li:hover {
+  }
+  ul li:hover {
     text-decoration: underline;
     text-underline-offset: 8px;
-}
-
-/* Navbar - responsive */
-@media only screen and (max-width: 840px) {
+  }
+  @media only screen and (max-width: 840px) {
     h3 {
-        font-size: 24px;
+      font-size: 24px;
     }
     ul {
-        display: none;
+      display: none;
     }
     ul li {
-        display: block;
-        margin: 20px;
+      display: block;
+      margin: 20px;
     }
     #menu {
-        width: 100%;
-        background: #071E23;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        text-align: center;
+      width: 100%;
+      background: #0F172A;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      text-align: center;
     }
     .menuBtn {
-        display: block;
-        cursor: pointer;
+      display: block;
+      cursor: pointer;
     }
     .closeBtn {
-        cursor: pointer;
+      cursor: pointer;
     }
+  }
+  
+  /* HOME SECTION - updated style */
+  #home {
+    background-color: #1E293B;
+    color: #F8FAFC;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .profile-img img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38BDF8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  
+  .my-intro {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .my-intro .intro {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .my-intro .intro span {
+    color: #38BDF8;
+  }
+  
+  .my-intro .role {
+    font-size: 20px;
+    font-weight: 500;
+    color: #A5B4FC;
+  }
+  
+  .btn {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .buttons {
+    background-color: #38BDF8;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .buttons:hover {
+    background-color: #0EA5E9;
+  }
+  
+  .visit-links {
+    display: flex;
+    gap: 20px;
+    font-size: 28px;
+  }
+  
+  .visit-links a {
+    color: #F8FAFC;
+    transition: color 0.3s ease;
+  }
+  
+  .visit-links a:hover {
+    color: #38BDF8;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 0 20px;
+    }
+  
+    .profile-img img {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .my-intro .intro {
+      font-size: 26px;
+    }
+  
+    .my-intro .role {
+      font-size: 18px;
+    }
+  }
+/* 
+#about {
+    height: 100vh;
+    width: 100%;
 }
+
+#projects {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+} */
+  
